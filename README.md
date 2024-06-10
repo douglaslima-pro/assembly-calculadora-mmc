@@ -22,6 +22,18 @@ No final da execução, o valor do MMC deve estar armazenado no registrador `$t8
 ### Resultado
 - **$t8**: armazena o resultado do mmc
 
+## Resultado
+**Exemplo** da fórmula do MMC utilizando 3 números:
+![Exemplo do MMC com 3 números](./img/exemplo-mmc.png)
+**Resultado** em Assembly/MIPS:
+```
+Informe o primeiro numero: 15
+Informe o segundo numero: 25
+Informe o terceiro numero: 70
+MMC = 1050
+-- program is finished running --
+```
+
 ## Solução na linguagem C
 ```c
 #include <stdio.h>
