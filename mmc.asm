@@ -65,9 +65,9 @@ main:
                 beq $t0, 0, dividirNumero1
 	       	# caso contrario, pula para a proxima condicao
                 b seNumero2ForMultiplo
-                    dividirNumero1:
-                        # $s0 = $s0 / $s3
-                        div $s0, $s3
+                dividirNumero1:
+                	# $s0 = $s0 / $s3
+               		div $s0, $s3
                         mflo $s0
             # se o segundo numero for multiplo do divisor, entao divide
             seNumero2ForMultiplo:
@@ -75,7 +75,7 @@ main:
                 beq $t1, 0, dividirNumero2
 	        # caso contrario, pula para a proxima condicao
                 b seNumero3ForMultiplo
-                    dividirNumero2:
+               	dividirNumero2:
                         # $s1 = $s1 / $s3
                         div $s1, $s3
                         mflo $s1
@@ -85,7 +85,7 @@ main:
                 beq $t2, 0, dividirNumero3
                 # caso contrario, pula para a proxima condicao
                 b seQualquerNumeroForMultiplo
-                    dividirNumero3:
+               	dividirNumero3:
                         # $s2 = $s2 / $s3
                         div $s2, $s3
                         mflo $s2
