@@ -24,7 +24,9 @@ No final da execução, o valor do MMC deve estar armazenado no registrador `$t8
 
 ## Resultado
 **Exemplo** da fórmula do MMC utilizando 3 números:
+
 ![Exemplo do MMC com 3 números](./img/exemplo-mmc.png)
+
 **Resultado** em Assembly/MIPS:
 ```
 Informe o primeiro numero: 15
